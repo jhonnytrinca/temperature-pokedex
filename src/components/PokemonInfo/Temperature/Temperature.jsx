@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useTemperature } from '../../../hooks';
+import React from 'react';
 import * as S from './Temperature.styles';
 
 const Temperature = ({ city, temp, weather }) => {

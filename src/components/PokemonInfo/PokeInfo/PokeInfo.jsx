@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import * as S from './PokeInfo.styles';
-import { PokemonService } from '../../../services';
 import OtherPokemons from './OtherPokemons';
 import PokePhoto from './PokePhoto';
-import { alpha } from '@material-ui/core';
 import { usePokemon } from '../../../hooks';
 
 const PokeInfo = ({ pokemons, type }) => {
@@ -14,6 +12,7 @@ const PokeInfo = ({ pokemons, type }) => {
   useEffect(() => {
     const url = pkm.pokemon.url;
     getPhoto(url);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pkm.pokemon.url]);
 
   const textDecor = (item) => {

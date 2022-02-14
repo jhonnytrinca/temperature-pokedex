@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import _, { set } from 'lodash';
+import _ from 'lodash';
 import { PokemonService } from '../services';
 
 const usePokemon = () => {

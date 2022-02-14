@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Temperature from './Temperature/Temperature';
 import PokeInfo from './PokeInfo/PokeInfo';
 import * as S from './PokemonInfo.styles';
-import { PokemonService } from '../../services';
-import _ from 'lodash';
 import usePokemon from '../../hooks/usePokemon.jsx';
 
 const PokemonInfo = ({ temp, city, weather }) => {
@@ -12,6 +10,7 @@ const PokemonInfo = ({ temp, city, weather }) => {
   useEffect(() => {
     const pokeWeather = pokemonType(temp);
     getPokemon(pokeWeather);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [temp]);
 
   const pokemonType = (temp) => {
