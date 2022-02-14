@@ -72,7 +72,7 @@ function App() {
   return (
     <>
       <AppContainer>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme} injectFirst>
           <GlobalStyle />
           <Header />
           <AddressImput
