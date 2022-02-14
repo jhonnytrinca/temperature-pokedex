@@ -80,6 +80,7 @@ export const Title = styled.h1`
     font-size: 2rem;
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -2px 2px;
+    letter-spacing: 0.1rem;
 
     svg {
       width: 20%;
@@ -104,6 +105,7 @@ export const Title = styled.h1`
     font-size: 1.2rem;
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -1px 1px;
+    
 
     svg {
       width: 18%;

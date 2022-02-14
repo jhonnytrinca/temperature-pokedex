@@ -17,11 +17,12 @@ const PokeInfo = ({ pokemons, type }) => {
   }, [pkm.pokemon.url]);
 
   const textDecor = (item) => {
-    return {
-      span: { color: `types.${item}.main` },
-      '&:hover::before': { bgcolor: `types.${type}.main` }
-    };
+    return {'&:hover::before': { bgcolor: `types.${type}.main` }};
   };
+
+  const colorType = (item) => {
+    return { color: `types.${item}.main` }
+  }
 
   return (
     <>
@@ -32,19 +33,19 @@ const PokeInfo = ({ pokemons, type }) => {
           <S.Box sx={{ bgcolor: `types.${type}.bg` }}>
             <S.MainPokemonBox>
               <PokePhoto photos={photos} name={pkm.pokemon.name} />
-              <S.Text sx={textDecor(type)}>
-                O tipo de Pokémon aparecendo na sua cidade é <span className='inlineText'>{type}</span>
+              <S.Text className='listItem' sx={textDecor(type)}>
+                O tipo de Pokémon aparecendo na sua cidade é <S.Text sx={colorType(type)} className='inlineText'>{type}</S.Text>
               </S.Text>
-              <S.Text sx={textDecor(type)}>
+              <S.Text className='listItem' sx={textDecor(type)}>
                 O Pokémon com maiores chances de aparecer em sua cidade é o{' '}
-                <span className='inlineText'>{pkm.pokemon.name}</span>
+                <S.Text sx={colorType(type)} className='inlineText'>{pkm.pokemon.name}</S.Text>
               </S.Text>
               {ddf.length > 0 ? (
-                <S.Text sx={textDecor(type)}>
+                <S.Text className='listItem' sx={textDecor(type)}>
                   Para captura-lo, não esqueça de usar Pokémons dos tipos{' '}
                   {ddf.map((item, index) => (
-                    <S.Text className='inlineText' sx={textDecor(item.name)} key={index}>
-                      <span>{item.name}</span>
+                    <S.Text className='inlineText' sx={colorType(item.name)} key={index}>
+                      {item.name}
                     </S.Text>
                   ))}{' '}
                   pois são sua maior fraquesa!
@@ -54,11 +55,11 @@ const PokeInfo = ({ pokemons, type }) => {
               )}
               {ddt.length > 0 ? (
                 <>
-                  <S.Text sx={textDecor(type)}>
+                  <S.Text className='listItem' sx={textDecor(type)}>
                     E não use Pokémons dos tipos{' '}
                     {ddt.map((item, index) => (
-                      <S.Text className='inlineText' sx={textDecor(item.name)} key={index}>
-                        <span>{item.name}</span>
+                      <S.Text className='inlineText' sx={colorType(item.name)} key={index}>
+                        {item.name}
                       </S.Text>
                     ))}{' '}
                     pois são sua resistência!
@@ -69,11 +70,11 @@ const PokeInfo = ({ pokemons, type }) => {
               )}
               {ndf.length > 0 ? (
                 <>
-                  <S.Text sx={textDecor(type)}>
+                  <S.Text className='listItem' sx={textDecor(type)}>
                     Nem pense em levar Pokémons dos tipos{' '}
                     {ndf.map((item, index) => (
-                    <S.Text className='inlineText' sx={textDecor(item.name)} key={index}>
-                       <span>{item.name}</span>
+                    <S.Text className='inlineText' sx={colorType(item.name)} key={index}>
+                       {item.name}
                       </S.Text>
                     ))}{' '}
                     pois seu dano ao tipo {type} é zero!
@@ -83,7 +84,7 @@ const PokeInfo = ({ pokemons, type }) => {
                 ''
               )}
               <S.ShinyContainer>
-                <S.Text sx={textDecor(type)}>
+                <S.Text className='listItem' sx={textDecor(type)}>
                   Se você tiver muita sorte, pode até encontrar um pokémon
                   shiny!!{' '}
                 </S.Text>
