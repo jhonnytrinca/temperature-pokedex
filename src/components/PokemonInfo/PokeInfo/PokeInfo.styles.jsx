@@ -94,12 +94,12 @@ export const Box = styled(MaterialBox)`
 
   @media(max-width: 900px) {
     margin: 10px 20px;
-    padding: 20px 10px;
+    padding: 20px 10px; 
   }
 
   @media(max-width: 770px) {
-    margin: 10px 16px;
-    padding: 20px 10px;
+    margin: 0 16px;
+    padding: 20px 10px 10px;
   }
 
   @media(max-width: 380px) {
@@ -212,7 +212,7 @@ export const OtherPokemonsWrapper = styled(MaterialBox)`
   
   @media(max-width: 770px) {
     width: 90%;
-    padding: 0;
+    padding: 0 10px;
   }
 
   &::-webkit-scrollbar {
@@ -246,6 +246,7 @@ export const OtherText = styled(Typography)`
  text-transform: capitalize; 
  text-align: center;
  font-weight: 600 !important;
+ padding-bottom: 10px;
 `
 
 export const OtherContainer = styled(MaterialBox)`
@@ -255,7 +256,7 @@ export const OtherContainer = styled(MaterialBox)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 16px 0;
+  margin: 16px 6px;
 
   :hover {
       transform: scale(1.1);

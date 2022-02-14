@@ -17,9 +17,9 @@ const OtherPokemons = ({pokemons, textDecor, type}) => {
     <S.OthersTitle className='otherTitle'>Outros Pokémons que também estão aparecendo:</S.OthersTitle>
   <S.Wrapper>
     <S.OtherPokemonsWrapper>
-  {carousel.map((item) => <S.OtherContainer><S.OtherPhoto src={item.sprites.other['official-artwork'].front_default} alt='pokemon' /><S.OtherText className='otherList' sx={{ color: `types.${type}.main` }}>{item.name}</S.OtherText></S.OtherContainer>)}
+  {carousel.map((item, index) => <S.OtherContainer key={index}><S.OtherPhoto src={item.sprites.other['official-artwork'].front_default} alt={item.name} /><S.OtherText className='otherList' sx={{ color: `types.${type}.main` }}>{item.name}</S.OtherText></S.OtherContainer>)}
     </S.OtherPokemonsWrapper> 
-      <ArrowForwardIosIcon justifyContent='center'/>
+      <ArrowForwardIosIcon/>
     </S.Wrapper>
    </>
   )}
