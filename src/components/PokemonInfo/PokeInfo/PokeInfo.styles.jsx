@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Typography, Box as MaterialBox } from '@material-ui/core';
+import { Typography, Box as MaterialBox } from '@mui/material';
 
 
 export const Text = styled(Typography).attrs({ variant: 'h6' })`

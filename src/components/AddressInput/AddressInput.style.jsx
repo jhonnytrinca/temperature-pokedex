@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {
   TextField as MaterialTextField
-} from '@material-ui/core';
+} from '@mui/material';
 import { LoadingButton as MaterialButton } from '@mui/lab';
 
 export const Container = styled.div`

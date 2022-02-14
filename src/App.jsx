@@ -4,7 +4,7 @@ import PokemonSolid from './fonts/PokemonSolid.ttf';
 import AddressImput from './components/AddressInput/AddressInput';
 import Header from './components/Header/Header';
 import PokemonInfo from './components/PokemonInfo/PokemonInfo';
-import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useTemperature } from './hooks';
 
 const theme = createTheme({
