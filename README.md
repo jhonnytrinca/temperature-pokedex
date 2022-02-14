@@ -14,19 +14,6 @@ Esse projeto consiste na criação de uma busca de Pokémons por intermédio da 
 
 Acesse o site [nesse link](https://temperature-pokedex.netlify.app/)
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
 ## Como rodar o projeto
 
 Para rodar esse projeto será necessário possuir o [NodeJs](https://nodejs.org/en/), [Git](https://git-scm.com/) e um editor de sua preferência, como [VS Code](https://code.visualstudio.com/).
