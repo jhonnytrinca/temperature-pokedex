@@ -128,7 +128,7 @@ export const Title = styled.h1`
   }
 
   @media(max-width: 400px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -1px 1px;
 
