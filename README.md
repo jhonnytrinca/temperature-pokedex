@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Temperature Live Pokédex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto consiste na criação de uma busca de Pokémons por intermédio da temperatura atual na cidade desejada.
 
-## Available Scripts
+## Tecnologias
 
-In the project directory, you can run:
+- [ReactJs](https://reactjs.org/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Styled Components](https://styled-components.com/)
+- [Material UI](https://mui.com/pt/)
+- [Lodash](https://lodash.com/)
 
-### `npm start`
+## Utilização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Acesse o site [nesse link](https://temperature-pokedex.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```python
+import foobar
 
-### `npm test`
+# returns 'words'
+foobar.pluralize('word')
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# returns 'geese'
+foobar.pluralize('goose')
 
-### `npm run build`
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como rodar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar esse projeto será necessário possuir o [NodeJs](https://nodejs.org/en/), [Git](https://git-scm.com/) e um editor de sua preferência, como [VS Code](https://code.visualstudio.com/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clonando o projeto
 
-### `npm run eject`
+Clone o repositório e o acesse na pasta do projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+$ git clone https://github.com/jhonnytrinca/temperature-pokedex
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Rodando a aplicação no servidor web
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+No diretório do projeto, instale as dependências com:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`yarn start` ou `npm start`
 
-## Learn More
+Isso rodará a aplicação em modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualização no browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuições
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para contribuir nesse projeto:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Faça um fork do projeto;
+- Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+- Crie um commit com suas alterações: `git commit -m "feature: my feature"`
+- Faça o envio das alterações: `git push origin my-feature`
