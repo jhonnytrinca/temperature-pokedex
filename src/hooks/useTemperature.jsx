@@ -3,25 +3,25 @@ import { AddressService } from '../services';
 
 const useTemperature = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [city, setCity] = useState('');
-  const [temp, setTemp] = useState('');
-  const [weather, setWheather] = useState('');
+  const [climate, setClimate] = useState({city: '', temp: '', weather: '', wind: ''})
 
   const getTemperature = useCallback(async (address) => {
     await AddressService.getCity(address)
       .then((res) => {
-        const { weather, main, name } = res.data;
-
-        setCity(name);
-        setTemp(main.temp);
-        setWheather(weather);
+        const { weather, main, name, wind } = res.data;   
+        setClimate({
+          city: name,
+          temp: main.temp,
+          weather: weather,
+          wind: wind
+        })
       })
       .finally(() => {
         setIsLoading(false);
       });
   }, []);
 
-  return { isLoading, getTemperature, temp, weather, city };
+  return { isLoading, getTemperature, climate };
 };
 
 export default useTemperature;

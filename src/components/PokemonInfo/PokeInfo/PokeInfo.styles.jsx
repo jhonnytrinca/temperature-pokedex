@@ -89,17 +89,16 @@ export const PhotoWrapper = styled.div`
 
 export const Box = styled(MaterialBox)`
   margin: 10px 40px;
-  padding: 30px 20px;
+  padding: 30px 20px 10px;
   border-radius: 30px;
 
   @media(max-width: 900px) {
     margin: 10px 20px;
-    padding: 20px 10px; 
+    padding: 20px 10px 0; 
   }
 
   @media(max-width: 770px) {
     margin: 0 16px;
-    padding: 20px 10px 10px;
   }
 
   @media(max-width: 380px) {
@@ -261,7 +260,7 @@ export const OtherContainer = styled(MaterialBox)`
   :hover {
       transform: scale(1.1);
       border: 2px solid silver;
-      border-radius: 20%;
+      border-radius: 20% !important;
     }
 
   @media(max-width: 1100px) {

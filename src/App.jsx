@@ -59,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   const [address, setAddress] = useState('');
-  const { isLoading, getTemperature, temp, weather, city } = useTemperature();
+  const { isLoading, getTemperature, climate } = useTemperature();
 
   const onSubmit = async () => {
     await getTemperature(address);
@@ -72,7 +72,7 @@ function App() {
   return (
     <>
       <AppContainer>
-        <ThemeProvider theme={theme} injectFirst>
+        <ThemeProvider theme={theme}>
           <GlobalStyle />
           <Header />
           <AddressImput
@@ -83,7 +83,7 @@ function App() {
           {isLoading ? (
             ''
           ) : (
-            <PokemonInfo temp={temp} city={city} weather={weather} />
+            <PokemonInfo temp={climate.temp} city={climate.city} weather={climate.weather} wind={climate.wind} />
           )}
         </ThemeProvider>
       </AppContainer>
