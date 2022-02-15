@@ -61,7 +61,8 @@ function App() {
   const [address, setAddress] = useState('');
   const { isLoading, getTemperature, climate } = useTemperature();
 
-  const onSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     await getTemperature(address);
   };
 
@@ -76,7 +77,7 @@ function App() {
           <GlobalStyle />
           <Header />
           <AddressImput
-            onSubmit={onSubmit}
+            handleSubmit={handleSubmit}
             value={address}
             handleAddress={handleAddress}
           />

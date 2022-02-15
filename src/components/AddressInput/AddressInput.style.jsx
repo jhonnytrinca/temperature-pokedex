@@ -55,7 +55,7 @@ export const Button = styled(MaterialButton)`
   }
 `;
 
-export const InnerBox = styled.div`
+export const InnerBox = styled.form`
   width: 60%;
   display: flex;
   gap: 20px;
