@@ -47,6 +47,7 @@ export const Button = styled(MaterialButton)`
     align-self: center;
     span {
       font-size: 0.7rem;
+      padding-right: 0;
     }
 
     svg {
