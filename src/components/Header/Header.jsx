@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <S.Header>
       <S.Title>
-        Qual<PokemonLogo />
+        Qual<PokemonLogo /><br className='responsive'/>
         vive aonde moro?
       </S.Title>
     </S.Header>

@@ -19,7 +19,7 @@ const PokemonInfo = ({ temp, city, weather, wind }) => {
 
 
     if (weather[0].main === 'Rain' && temp <= 20) {
-      return 13; 
+      return 13; //electric
     } else if (weather[0].main === 'Rain' && temp >= 20) {
       return 16; // dragon
     } else if (wind.speed > 4 && weather[0].main !== 'Rain') {

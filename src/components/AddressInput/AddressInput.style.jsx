@@ -42,36 +42,16 @@ export const Button = styled(MaterialButton)`
     }
   }
 
-  @media(max-width: 820px) {
-    span {
-      font-size: 0.8rem;
-    }
-
-    svg {
-      height: 90%;
-    }
-  }
-
-  @media(max-width: 680px) {
-    span {
-      font-size: 0.6rem;
-    }
-  }
-
-  @media(max-width: 560px) {
-    padding: 0 6px !important;
-
-    span {
-      font-size: 0.4rem;
-      padding-right: 4px;
-    }
-    svg {
-      width: 18%;
-    }
-  }
-
   @media(max-width: 470px) {
-    padding: 0 !important;
+    width: 35%;
+    align-self: center;
+    span {
+      font-size: 0.7rem;
+    }
+
+    svg {
+      height: 10px;
+    }
   }
 `;
 
@@ -95,46 +75,17 @@ export const InnerBox = styled.div`
     }
   }
 
-  @media(max-width: 770px) {
-    width: 75%;
-  }
+  @media(max-width: 470px) {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
 
-  @media(max-width: 680px) {
-    .addressInput input {
-      height: 0.8em;
+    .addressInput label {
       font-size: 0.9rem;
     }
 
-    .addressInput label {
-      line-height: 0.8em;
-    }
-  }
-
-  @media(max-width: 560px) {
-    .addressInput input {
-      height: 0.6em;
+    .addressInput input::placeholder {
       font-size: 0.7rem;
-    }
-
-    .addressInput label {
-      font-size: 0.7rem;
-    }
-
-    .addressInput fieldset legend span {
-      padding: 0;      
-    }
-  }
-
-  @media(max-width: 470px) {
-    gap: 10px;
-
-    .addressInput input {
-      height: 0.5em;
-      font-size: 0.5rem;
-    }
-
-    .addressInput label {
-      font-size: 0.5rem;
     }
   }
 `;

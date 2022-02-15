@@ -10,6 +10,14 @@ export const Header = styled.div`
   margin: 10px auto 0;
   background-color: #c62828;
 
+  .responsive {
+    display: inline;
+
+    @media(min-width: 490px) {
+      display: none;
+    }
+  }
+
   @media(max-width: 820px) {
     height: 100px;
   }
@@ -18,12 +26,8 @@ export const Header = styled.div`
     height: 90px;
   }
 
-  @media(max-width: 560px) {
-    height: 70px;
-  }
-
-  @media(max-width: 470px) {
-    height: 50px;
+  @media(max-width: 490px) {
+    height: 130px;
   }
 `;
 
@@ -35,6 +39,7 @@ export const Title = styled.h1`
   -webkit-text-stroke: 3px #01579b;
   text-shadow: #01579b -5px 4px;
   padding: 0 20px;
+  display: inline-block;
 
   svg {
     padding-right: 1rem;
@@ -58,21 +63,21 @@ export const Title = styled.h1`
     text-shadow: #01579b -3px 2px;
 
     svg {
-      width: 25%;
+      width: 180px;
+      height: 60px;
       padding-left: 20px;
-      vertical-align: -30%;
     }
   }
 
-  @media(max-width: 820px) {
+  @media(max-width: 830px) {
     font-size: 2.4rem;
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -2px 2px;
 
     svg {
-      width: 20%;
-      padding-left: 20px;
-      vertical-align: -30%;
+      width: 150px;
+      height: 50px;
+      padding-left: 6px;
     }
   }
 
@@ -81,61 +86,51 @@ export const Title = styled.h1`
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -2px 2px;
     letter-spacing: 0.1rem;
-
-    svg {
-      width: 20%;
-      padding-left: 20px;
-      vertical-align: -60%;
-    }
   }
 
   @media(max-width: 680px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     -webkit-text-stroke: 1px #01579b;
     text-shadow: #01579b -2px 2px;
 
     svg {
-      width: 18%;
-      padding-left: 10px;
-      vertical-align: -80%;
+      width: 130;
+      height: 43px;
+    }
+  }
+  
+  @media(max-width: 490px) {
+    font-size: 2.5rem;
+    line-height: 0.5;
+    text-align: center;
+
+    svg {
+      width: 150;
+      height: 50px;
     }
   }
 
-  @media(max-width: 560px) {
-    font-size: 1.2rem;
-    -webkit-text-stroke: 1px #01579b;
-    text-shadow: #01579b -1px 1px;
-    
+  @media(max-width: 460px) {
+    font-size: 2rem;
+    line-height: 0.5;
+    text-align: center;
 
     svg {
-      width: 18%;
-      padding-left: 10px;
-      vertical-align: -140%;
+      width: 150;
+      height: 50px;
+      vertical-align: -40%;
     }
   }
 
-
-  @media(max-width: 470px) {
-    font-size: 1rem;
-    -webkit-text-stroke: 1px #01579b;
-    text-shadow: #01579b -1px 1px;
-
-    svg {
-      width: 15%;
-      padding-left: 10px;
-      vertical-align: -160%;
-    }
-  }
-
-  @media(max-width: 400px) {
-    font-size: 0.9rem;
-    -webkit-text-stroke: 1px #01579b;
-    text-shadow: #01579b -1px 1px;
+  @media(max-width: 380px) {
+    font-size: 1.8rem;
+    line-height: 0.5;
+    text-align: center;
 
     svg {
-      width: 15%;
-      padding-left: 10px;
-      vertical-align: -210%;
+      width: 150;
+      height: 50px;
+      vertical-align: -40%;
     }
   }
 `;

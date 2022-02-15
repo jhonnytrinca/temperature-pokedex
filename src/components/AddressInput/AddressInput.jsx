@@ -25,6 +25,7 @@ const AddressImput = ({ onSubmit, handleAddress, value }) => {
             variant='contained'
             disabled={!value}
             color='primary'
+            type="submit"
           >
             <span>Buscar</span> <Pokeball fill='white' />
           </S.Button>
