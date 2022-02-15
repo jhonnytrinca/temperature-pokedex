@@ -101,7 +101,6 @@ export const Title = styled.h1`
   
   @media(max-width: 490px) {
     font-size: 2.5rem;
-    line-height: 0.5;
     text-align: center;
 
     svg {
@@ -112,7 +111,6 @@ export const Title = styled.h1`
 
   @media(max-width: 460px) {
     font-size: 2rem;
-    line-height: 0.5;
     text-align: center;
 
     svg {

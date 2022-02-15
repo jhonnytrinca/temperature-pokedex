@@ -43,7 +43,7 @@ export const Button = styled(MaterialButton)`
   }
 
   @media(max-width: 470px) {
-    width: 35%;
+    width: 40%;
     align-self: center;
     span {
       font-size: 0.7rem;
