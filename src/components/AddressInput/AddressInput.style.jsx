@@ -50,7 +50,7 @@ export const Button = styled(MaterialButton)`
     }
 
     svg {
-      height: 30px;
+      display: none;
     }
   }
 `;
